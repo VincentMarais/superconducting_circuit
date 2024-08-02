@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: quantum_superconduction_circuit.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+Database file #1: Superconducting_circuit.bib
+Warning--to sort, need author or key in noauthor_meissner_2024
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            508 strings with 4258 characters,
+and the built_in function-call counts, 438 in all, are:
+= -- 38
+> -- 14
+< -- 0
++ -- 6
+- -- 4
+* -- 23
+:= -- 71
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 19
+empty$ -- 46
+format.name$ -- 4
+if$ -- 95
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 12
+num.names$ -- 2
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 10
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 1
+while$ -- 2
+width$ -- 3
+write$ -- 21
+(There was 1 warning)

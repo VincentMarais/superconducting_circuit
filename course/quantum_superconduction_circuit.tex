@@ -1,0 +1,171 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{lmodern}
+
+%%%%%% TIKZ BIBLIOTHÈQUES %%%%%%
+\usepackage{tikz}
+\usetikzlibrary{3d}
+\usepackage{pgfplots}
+\usetikzlibrary{patterns}
+\usepackage[european resistor, european voltage, european current]{circuitikz}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings,decorations.pathmorphing,
+	decorations.pathreplacing}
+\usetikzlibrary{calc,patterns,shapes.geometric}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{matrix, calc, backgrounds, decorations.pathreplacing}
+\usepackage{mathtools}
+\usetikzlibrary{arrows.meta}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% GESTION DES RÉFÉRENCES %%%%%%
+\usepackage{caption}
+\pgfplotsset{compat=newest}
+\usepackage{hyperref} % Crée des hyperliens pour le sommaire
+\hypersetup{pdfborder=0 0 0} % Cache les cadres rouges autour des hyperliens
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% PAGE DE COUVERTURE %%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+%%% GESTION DES FIGURES %%%
+\usepackage{float}      % Pour les figures à la place voulue UNIQUEMENT
+\usepackage{graphicx}   % Pour inclure des figures
+\usepackage{chngcntr}   % Bibli pour que la numérotation des figures dépende de la section
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{tocloft} % package to adjust the appearance of the table of contents.
+\usepackage{lipsum} % for sample text
+\usepackage{glossaries}
+
+\usepackage{amsfonts}   % Ensemble mathématique
+\usepackage{amsmath}    % Environnement mathématique équation
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{tcolorbox} % box coloré
+\tcbuselibrary{skins} % Utilse pour faire Titres avancés: Personnaliser l'emplacement et l'apparence des titres des boîtes bien au-delà des capacités de base, comme dans l'exemple que je vous ai fourni, où le titre est placé en chevauchement sur le bord supérieur de la boîte.
+\usepackage{mdframed}   % Box Théorèmes et définitions
+\usepackage{xspace}     % Pour les redéfinitions de commandes
+\usepackage{makecell}   % Pour des retours à la ligne dans une ligne de tableau
+\usepackage{physics} % notation mathématique pour la physique 
+\usepackage{subcaption}
+\usepackage{amsthm}
+
+
+%%% CONFIGURATION DE LA PAGE %%%
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{systeme}
+%\usepackage{palatino} %%% style of the Latex
+\usepackage{lastpage} 
+
+
+
+
+
+%%% Section
+\newcommand{\hugetext}[1]{%
+  \begin{flushleft}
+    {\huge \textbf{#1}}
+  \end{flushleft}
+}
+
+
+
+
+%%%
+% Redefine the abstract environment
+\makeatletter
+\renewenvironment{abstract}{
+    \if@twocolumn
+      \section*{\abstractname}%
+    \else
+      \begin{center}%
+        {\Huge\bfseries \leftline{\abstractname\vspace{-1em}}\vspace{0.3em}}%
+      \end{center}%
+	  \noindent
+
+    \fi}
+    {\if@twocolumn\else\endquotation\fi}
+\makeatother
+%%% Redefine the Contents
+
+
+%%% color %%%
+
+\definecolor{asparagus}{rgb}{0.53, 0.66, 0.42}
+\definecolor{carminered}{rgb}{1.0, 0.0, 0.22}
+\definecolor{darkpastelblue}{rgb}{0.47, 0.62, 0.8}
+\definecolor{darkgray}{rgb}{0.66, 0.66, 0.66}
+\definecolor{harvardcrimson}{rgb}{0.79, 0.0, 0.09}
+
+
+%%%%CONFIG MATHS EQUATIONS
+\usepackage{ mathrsfs } % FOR the H of the Hamiltionan
+
+\input{env/math.tex}
+
+
+\counterwithin{figure}{section} % Application de chngcntr pour que la numérotation des figures dépende de la section
+
+%%% CONFIGURATION DE LA PAGE %%%
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+	headheight=15pt,
+	includeheadfoot
+}
+
+
+% Configuration des en-têtes et des pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{ \textbf{Quantum Superconducting circuit}}
+
+
+\fancyfoot[C]{USACH -- Quantum Superconducting circuit \hspace{0.5cm} \textbf{\thepage}}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\fancyfoot[C]{USACH -- Quantum Superconducting circuit \hspace{0.5cm} \textbf{\thepage}}
+}
+
+
+\renewcommand{\footrule}{\hrulefill} % Dessine la barre horizontale
+
+% Configuration des titres de sections
+\titleformat{\section}[hang]{\normalfont\large\bfseries}{\thesection.}{0.5em}{}
+
+\setlength{\parskip}{0.5em}
+\title{Quantum Superconducting circuit}
+\author{\textup{Vincent MARAIS}}
+
+\newpage
+
+\begin{document}
+	
+	\input{first_page/title.tex}
+	\tableofcontents
+
+
+\newpage
+	% Contenu du document
+\section{Introduction of superconducting}
+\input{part/intro/intro.tex}
+\newpage
+
+
+\bibliographystyle{plain}
+\bibliography{Superconducting_circuit.bib}
+
+
+\end{document}

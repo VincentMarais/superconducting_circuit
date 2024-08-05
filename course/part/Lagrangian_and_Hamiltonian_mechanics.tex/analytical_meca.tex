@@ -1,0 +1,80 @@
+\mydef{Lagrangian (L)}{
+	\[ 
+	L = T - V 
+	\]
+	where \(T\) is the kinetic energy and \(V\) is the potential energy.
+}
+
+\mydef{Hamiltonian (H)}{
+	\[ 
+	H = \dot{q}_i p_i - L 
+	\]
+	where \(\dot{q}_i\) are the generalized velocities and \(p_i\) are the canonical momenta.
+}
+
+\mydef{Euler-Lagrange Equations}{
+	\[ 
+	\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) - \frac{\partial L}{\partial q_i} = 0 
+	\]
+}
+
+\mydef{Canonical Momenta (p\_i)}{
+	\[ 
+	p_i = \frac{\partial L}{\partial \dot{q}_i} 
+	\]
+}
+
+\mydef{Hamilton’s Equations of Motion}{
+	\[ 
+	\dot{q}_i = \frac{\partial H}{\partial p_i}, \quad \dot{p}_i = -\frac{\partial H}{\partial q_i} 
+	\]
+}
+
+\mydef{Phase Space}{
+	The space of canonical variables \((q, p)\).
+}
+
+\mydef{Cyclic Coordinates}{
+	Coordinates that do not appear in the Lagrangian, leading to conserved canonical momenta.
+}
+
+\mydef{D’Alembert’s Principle}{
+	\[ 
+	\sum ( \dot{p}_i - F_i) \cdot \delta r_i = 0 
+	\]
+}
+
+\mydef{Virtual Displacement (\(\delta r_i\))}{
+	An infinitesimal displacement consistent with the constraints, carried out at a fixed time.
+}
+
+\section*{Important Theorems}
+
+\myth{Hamilton’s Principle}{
+	The motion of a system extremizes the action \(S\):
+	\[ 
+	\delta S = \delta \int_{t_1}^{t_2} L \, dt = 0 
+	\]
+	This leads to the Euler-Lagrange equations.
+}
+
+\myth{Noether’s Theorem}{
+	Every differentiable symmetry of the action corresponds to a conservation law.
+}
+
+\myth{Liouville’s Theorem}{
+	The phase space distribution function is conserved along the trajectories of the system.
+}
+
+\section*{Key Concepts}
+
+\mydef{Newtonian Mechanics}{
+	Describes the dynamics of particles using vector spatial coordinates or generalized coordinates.
+}
+
+\mydef{Lagrangian Mechanics}{
+	Focuses on the Lagrangian function and provides a scalar approach to dynamics, making it easier to handle different coordinate systems and constraints.
+}
+
+\mydef{Hamiltonian Mechanics}{
+	Introduces canonical momenta and phase space, providing a different formalism that is especially useful in statistical mechanics and quantum mechanics.}

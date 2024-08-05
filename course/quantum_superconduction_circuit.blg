@@ -5,46 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 Database file #1: Superconducting_circuit.bib
-Warning--to sort, need author or key in noauthor_meissner_2024
-You've used 2 entries,
+You've used 1 entry,
             2118 wiz_defined-function locations,
-            508 strings with 4258 characters,
-and the built_in function-call counts, 438 in all, are:
-= -- 38
-> -- 14
+            503 strings with 4181 characters,
+and the built_in function-call counts, 275 in all, are:
+= -- 23
+> -- 13
 < -- 0
-+ -- 6
++ -- 5
 - -- 4
-* -- 23
-:= -- 71
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 7
+* -- 15
+:= -- 54
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 19
-empty$ -- 46
+cite$ -- 1
+duplicate$ -- 12
+empty$ -- 23
 format.name$ -- 4
-if$ -- 95
+if$ -- 55
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 12
+newline$ -- 8
 num.names$ -- 2
-pop$ -- 17
+pop$ -- 8
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 4
 quote$ -- 0
-skip$ -- 14
+skip$ -- 7
 stack$ -- 0
-substring$ -- 10
-swap$ -- 2
+substring$ -- 5
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 1
+type$ -- 2
+warning$ -- 0
 while$ -- 2
-width$ -- 3
-write$ -- 21
-(There was 1 warning)
+width$ -- 2
+write$ -- 13
